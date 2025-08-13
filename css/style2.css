@@ -1,0 +1,49 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-repeat: no-repeat;
+    background-image: url('https://images.unsplash.com/photo-1570197820006-3e46f5ee01bb?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGNvbG9tYmlhfGVufDB8fDB8fHww');
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar-brand img {
+    height: 40px;
+}
+
+.form-container {
+    background: white;
+    padding: 3rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #ffc107;
+    color: #212529;
+}
+
+footer h5 {
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.navbar-nav .nav-link {
+    font-weight: bold;
+    color: #343a40 !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff !important;
+}
+
+.navbar {
+    border-bottom: 2px solid #e7e7e7;
+}
+
+.btn {
+    background-color: #ffc107;
+    color: black;
+}
