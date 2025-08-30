@@ -1,0 +1,400 @@
+.imagen {
+    height: 60px;
+    width: 60px;
+}
+
+.cartas2 {
+    width: 600px;
+    height: 400px;
+
+}
+
+.button1 {
+    background: #fbca1f;
+    font-family: inherit;
+    padding: 0.6em 1.3em;
+    font-weight: 900;
+    font-size: 18px;
+    border: 3px solid black;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em;
+    cursor: pointer;
+}
+
+.button1:hover {
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.15em 0.15em;
+}
+
+.button1:active {
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+}
+
+.navbar {
+    border-bottom: 2px solid #e7e7e7;
+}
+
+.navbar .navbar-brand img {
+    width: 40px;
+    height: auto;
+}
+
+.navbar-nav .nav-link {
+    font-weight: bold;
+    color: #343a40 !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff !important;
+}
+
+.carousel-item img {
+    height: 450px;
+    object-fit: cover;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #343a40;
+}
+
+.card-body {
+    background-color: #fff;
+    border-top: 2px solid #f8f9fa;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    color: #343a40;
+    font-weight: bold;
+}
+
+.card-text {
+    color: #6c757d;
+}
+
+.list-group-item {
+    border: 1px solid #e7e7e7;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.list-group-item h5 {
+    color: #343a40;
+    font-size: 1.15rem;
+    font-weight: bold;
+}
+
+.list-group-item p {
+    color: #6c757d;
+}
+
+footer {
+    background-color: #ffc107;
+    color: #343a40;
+    padding: 30px 0;
+    margin-top: 700px;
+}
+
+footer h5 {
+    font-weight: bold;
+}
+
+footer .text-dark {
+    color: #343a40 !important;
+}
+
+footer .me-3 {
+    margin-right: 1rem;
+}
+
+footer .container {
+    max-width: 1200px;
+}
+
+footer .row {
+    margin-bottom: 20px;
+}
+
+footer .row .col-md-4 {
+    text-align: left;
+}
+
+footer .row .col-12 {
+    text-align: center;
+}
+
+footer .row .col-md-4 a {
+    color: #343a40;
+    font-weight: bold;
+}
+
+footer .row .col-md-4 a:hover {
+    color: #007bff;
+}
+
+.card {
+    height: 400px;
+    /* Alto fijo */
+    width: 100%;
+    /* Asegura que ocupe el 100% del contenedor */
+    display: flex;
+    flex-direction: column;
+    /* Para alinear contenido verticalmente */
+    justify-content: space-between;
+    /* Espaciado entre elementos */
+    overflow: hidden;
+    /* Oculta el contenido desbordado */
+}
+
+.card img {
+    max-height: 150px;
+    /* Limita la altura de la imagen */
+    object-fit: cover;
+    /* Ajusta la imagen sin deformarla */
+    width: 100%;
+    /* Ocupa el ancho completo */
+}
+
+.card-body {
+    flex-grow: 1;
+    /* Permite que el texto se adapte al espacio disponible */
+    overflow: -moz-hidden-unscrollable;
+    /* Oculta texto que no quepa */
+    text-overflow: clip;
+    /* Añade puntos suspensivos si es necesario */
+}
+
+@media (max-width: 768px) {
+    .card {
+        height: auto;
+        /* Permite un tamaño flexible en pantallas pequeñas */
+    }
+}
+
+
+.card-body {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    /* Animación suave */
+}
+
+.card:hover .card-body {
+    transform: scale(1.1);
+    /* Aumenta el tamaño del cuerpo al hacer hover */
+    opacity: 0.9;
+    /* Opcional: cambia la opacidad */
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Suaviza el efecto */
+}
+
+.card:hover {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    /* Animación suave */
+    transform: scale(1.05);
+    /* Aumenta ligeramente el tamaño de la tarjeta */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* Añade un efecto de sombra */
+}
+
+/* ---------------------------------- */
+/* ESTILOS GENERALES DEL FORMULARIO */
+/* ---------------------------------- */
+.seccion-comentarios {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    padding: 40px 0;
+    background-color: #f9f9f9;
+}
+
+.contenedor-formulario {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --------------------------- */
+/* ESTILOS DE TÍTULOS Y TEXTOS */
+/* --------------------------- */
+.titulo-seccion {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-size: 2.2rem;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.titulo-seccion::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: #3498db;
+}
+
+.subtitulo-seccion {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+/* ----------------------- */
+/* DISPOSICIÓN EN REJILLA */
+/* ----------------------- */
+.comentarios-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+/* ----------------------- */
+/* ESTILOS DEL FORMULARIO */
+/* ----------------------- */
+.formulario-opinion {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-row {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.form-group {
+    flex: 1;
+    min-width: 200px;
+}
+
+.form-col-6 {
+    flex: 0 0 calc(50% - 10px);
+}
+
+/* ----------------------- */
+/* ESTILOS DE FORM ELEMENTOS */
+/* ----------------------- */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.input-estilizado,
+.textarea-estilizado {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border 0.3s;
+}
+
+.input-estilizado:focus,
+.textarea-estilizado:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+.textarea-estilizado {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* ----------------------- */
+/* SISTEMA DE PUNTUACIÓN */
+/* ----------------------- */
+.puntuacion {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 5px;
+}
+
+.puntuacion input[type="radio"] {
+    display: none;
+}
+
+.estrella {
+    font-size: 28px;
+    color: #ddd;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.puntuacion input[type="radio"]:checked~label.estrella,
+.puntuacion input[type="radio"]:hover~label.estrella,
+.estrella:hover {
+    color: #f1c40f;
+}
+
+/* ----------------------- */
+/* BOTÓN DE ENVÍO */
+/* ----------------------- */
+.btn-enviar {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-enviar:hover {
+    background-color: #2980b9;
+}
+
+/* ----------------------- */
+/* COLUMNA DE COMENTARIOS */
+/* ----------------------- */
+.comentarios-columna {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.lista-comentarios {
+    max-height: 500px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+/* ----------------------- */
+/* DISEÑO RESPONSIVE */
+/* ----------------------- */
+@media (max-width: 768px) {
+    .comentarios-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-col-6 {
+        flex: 0 0 100%;
+    }
+}
+
+

@@ -1,0 +1,154 @@
+/* === Imagen general pequeña === */
+.imagen {
+    height: 60px;
+    width: 60px;
+}
+
+/* === Estilo de tarjetas grandes personalizadas === */
+.cartas2 {
+    width: 600px;
+    height: 400px;
+}
+
+/* === Botón personalizado === */
+.button1 {
+    background: #fbca1f;
+    font-family: inherit;
+    padding: 0.6em 1.3em;
+    font-weight: 900;
+    font-size: 18px;
+    border: 3px solid black;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.button1:hover {
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.15em 0.15em;
+}
+
+.button1:active {
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em;
+}
+
+/* === Estilo general del body === */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* === Navbar === */
+.navbar {
+    border-bottom: 2px solid #e7e7e7;
+}
+
+.navbar .navbar-brand img {
+    width: 40px;
+    height: auto;
+}
+
+.navbar-nav .nav-link {
+    font-weight: bold;
+    color: #343a40 !important;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff !important;
+}
+
+/* === Carrusel de imágenes === */
+.carousel-item img {
+    height: 450px;
+    object-fit: cover;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #343a40;
+}
+
+/* === Tarjetas (cards) === */
+.card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    border: none;
+    border-radius: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    max-height: 180px;
+    object-fit: cover;
+    width: 100%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.card-body {
+    padding: 1rem;
+    background-color: #fff;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    flex-grow: 1;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    color: #343a40;
+    font-weight: 600;
+}
+
+.card-text {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+/* === Hover efecto sobre tarjeta === */
+.card:hover .card-body {
+    transform: scale(1.02);
+    opacity: 0.95;
+}
+
+/* === Hover efecto adicional si usas .hover-card === */
+.hover-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* === Estilo para lista (si aplica en otra sección) === */
+.list-group-item {
+    border: 1px solid #e7e7e7;
+    border-radius: 5px;
+    background-color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.list-group-item h5 {
+    color: #343a40;
+    font-size: 1.15rem;
+    font-weight: bold;
+}
+
+.list-group-item p {
+    color: #6c757d;
+}
+
+/* === Responsive: tarjetas adaptables === */
+@media (max-width: 768px) {
+    .card {
+        height: auto;
+    }
+}
