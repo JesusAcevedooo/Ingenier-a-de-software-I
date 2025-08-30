@@ -29,7 +29,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->bind_param("sssssss", $usuario, $contraseña, $nombre, $apellido, $telefono, $gmail, $rol);
 
     if ($stmt->execute()) {
+<<<<<<< HEAD
         header('Location: ..\iniciosesion.html');
+=======
+        echo "✅ Registro exitoso.";
+>>>>>>> c6546dedbbb5f5b8debcbb3b00550dceb412e8bd
     } else {
         echo "❌ Error al registrar: " . $stmt->error;
     }

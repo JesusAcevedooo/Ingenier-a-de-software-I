@@ -25,7 +25,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->bind_param("sssss", $nombre, $correo, $puntuacion, $comentario, $fecha);
 
     if ($stmt->execute()) {
+<<<<<<< HEAD
         header('Location: ..\reserva.html');
+=======
+        echo "✅ Comentario enviado correctamente.";
+>>>>>>> c6546dedbbb5f5b8debcbb3b00550dceb412e8bd
     } else {
         echo "❌ Error al enviar el comentario: " . $stmt->error;
     }

@@ -29,7 +29,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->bind_param("sssssss", $nombre, $correo, $telefono, $personas, $fecha, $hora, $zonaRestaurante);
 
     if ($stmt->execute()) {
+<<<<<<< HEAD
         header('Location: ..\negocios.html');
+=======
+        echo "✅ Cita agendada.";
+>>>>>>> c6546dedbbb5f5b8debcbb3b00550dceb412e8bd
     } else {
         echo "❌ Error al agendar: " . $stmt->error;
     }
